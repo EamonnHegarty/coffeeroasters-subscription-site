@@ -21,12 +21,10 @@ const theme = createTheme({
       fontFamily: ["Fraunces", "serif"].join(","),
       fontSize: 72,
     },
-
     h2: {
       fontFamily: ["Fraunces", "serif"].join(","),
       fontSize: 40,
     },
-
     h3: {
       fontFamily: ["Fraunces", "serif"].join(","),
       fontSize: 32,
