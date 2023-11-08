@@ -60,8 +60,6 @@ const Navbar = () => {
               >
                 <Typography
                   variant="body1"
-                  component="a"
-                  href={page.route}
                   sx={{
                     color: "secondary.light",
                     textDecoration: "none",
