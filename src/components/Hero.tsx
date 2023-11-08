@@ -56,7 +56,7 @@ const Hero = () => {
             made simple.
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} xl={4}>
           <Typography
             variant="body1"
             sx={{ textAlign: { xs: "center", sm: "left" }, opacity: 0.8 }}
