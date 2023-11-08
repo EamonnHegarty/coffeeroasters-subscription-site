@@ -14,6 +14,9 @@ const theme = createTheme({
       main: "#FEFCF7",
       light: "#83888F",
     },
+    info: {
+      main: "#66D2CF",
+    },
   },
   typography: {
     fontFamily: ["Barlow", "sans-serif"].join(","),

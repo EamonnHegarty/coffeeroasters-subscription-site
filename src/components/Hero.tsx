@@ -79,8 +79,10 @@ const Hero = () => {
               color="primary"
               sx={{
                 color: "secondary.main",
+                backgroundColor: "primary.main",
                 "&:hover": {
-                  color: "primary.main",
+                  backgroundColor: "info.main",
+                  color: "secondary.main",
                 },
               }}
             >
