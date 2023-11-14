@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 
 const CoffeeInfoCard = ({
   img,
@@ -20,23 +20,46 @@ const CoffeeInfoCard = ({
       }}
     >
       <CardContent>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Box mb={5}>
-            <Box component="img" src={img} sx={{ maxHeight: 200 }} />
-          </Box>
-        </Box>
-        <Typography variant="h4" align="center" mb={3}>
-          {title}
-        </Typography>
-        <Typography variant="body1" align="center">
-          {description}
-        </Typography>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={4} md={4} lg={12}>
+            <Box
+              component="img"
+              src={img}
+              sx={{ width: "100%", height: "auto" }}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={8}
+            md={8}
+            lg={12}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
+            <Typography
+              variant="h4"
+              sx={{
+                textAlign: { xs: "center", sm: "left", lg: "center" },
+                color: "primary.dark",
+                mb: 3,
+              }}
+            >
+              {title}
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                textAlign: { xs: "center", sm: "left", lg: "center" },
+              }}
+            >
+              {description}
+            </Typography>
+          </Grid>
+        </Grid>
       </CardContent>
     </Card>
   );

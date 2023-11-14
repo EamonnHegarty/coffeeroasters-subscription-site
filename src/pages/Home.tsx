@@ -4,7 +4,7 @@ import Danche from "../assets/home/desktop/image-danche.png";
 import GranEspresso from "../assets/home/desktop/image-gran-espresso.png";
 import Piccollo from "../assets/home/desktop/image-piccollo.png";
 import Planalto from "../assets/home/desktop/image-planalto.png";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 const COFFEE_INFO = [
   {
@@ -42,8 +42,20 @@ const Home = () => {
     <>
       <Hero />
       <Grid container>
+        <Grid item xs={12}>
+          <Typography
+            variant="h5"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            our collection
+          </Typography>
+        </Grid>
         {COFFEE_INFO.map((coffee) => (
-          <Grid item xs={3}>
+          <Grid item xs={12} md={12} lg={3}>
             <CoffeeInfoCard
               img={coffee.img}
               title={coffee.title}
