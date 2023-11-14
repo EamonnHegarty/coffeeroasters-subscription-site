@@ -5,7 +5,7 @@ const WhyChooseUs = () => {
     <Grid
       container
       sx={{ backgroundColor: "#2C343E", borderRadius: "10px" }}
-      p={20}
+      minHeight={475}
     >
       <Grid
         item
@@ -14,6 +14,8 @@ const WhyChooseUs = () => {
         flexDirection="column"
         alignItems="center"
         textAlign="center"
+        pt={10}
+        px={5}
       >
         <Typography variant="h3" color="white" mb={3}>
           Why choose us?
@@ -28,4 +30,4 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export { WhyChooseUs };

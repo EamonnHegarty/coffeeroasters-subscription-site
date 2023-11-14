@@ -5,7 +5,7 @@ import GranEspresso from "../assets/home/desktop/image-gran-espresso.png";
 import Piccollo from "../assets/home/desktop/image-piccollo.png";
 import Planalto from "../assets/home/desktop/image-planalto.png";
 import { Grid, Typography } from "@mui/material";
-import WhyChooseUs from "../components/WhyChooseUs";
+import { WhyChooseUs } from "../components/WhyChooseUs";
 
 const COFFEE_INFO = [
   {
