@@ -53,6 +53,7 @@ const CoffeeInfoCard = ({
             <Typography
               variant="body1"
               sx={{
+                color: "primary.dark",
                 textAlign: { xs: "center", sm: "left", lg: "center" },
               }}
             >

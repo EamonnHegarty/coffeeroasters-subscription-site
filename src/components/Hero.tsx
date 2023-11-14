@@ -33,6 +33,7 @@ const Hero = () => {
           md: 10,
           xs: 4,
         },
+        mb: 10,
         borderRadius: "10px",
       }}
     >

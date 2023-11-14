@@ -32,7 +32,7 @@ const Navbar = () => {
     <AppBar
       position="static"
       elevation={0}
-      sx={{ backgroundColor: "background.default", p: 2 }}
+      sx={{ backgroundColor: "background.default", p: 3 }}
     >
       <Grid container>
         <Grid item xs={5} display="flex" alignItems="center">
