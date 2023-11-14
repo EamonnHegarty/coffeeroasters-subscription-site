@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
         <Typography variant="h3" color="white" mb={3}>
           Why choose us?
         </Typography>
-        <Typography variant="body1" color="white" sx={{ maxWidth: 500 }}>
+        <Typography variant="body1" color="white" sx={{ maxWidth: 525 }}>
           A large part of our role is choosing which particular coffees will be
           featured in our range. This means working closely with the best coffee
           growers to give you a more impactful experience on every level.

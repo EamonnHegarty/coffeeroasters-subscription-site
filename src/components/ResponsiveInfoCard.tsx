@@ -1,13 +1,17 @@
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 
-const CoffeeInfoCard = ({
+const ResponsiveInfoCard = ({
   img,
   title,
   description,
+  backgroundColor,
+  textColor,
 }: {
   img: string;
   title: string;
   description: string;
+  backgroundColor: string;
+  textColor: string;
 }) => {
   return (
     <Card
@@ -20,7 +24,12 @@ const CoffeeInfoCard = ({
       }}
     >
       <CardContent>
-        <Grid container spacing={2}>
+        <Grid
+          container
+          spacing={2}
+          sx={{ backgroundColor: backgroundColor, borderRadius: "10px" }}
+          p={2}
+        >
           <Grid item xs={12} sm={4} md={4} lg={12}>
             <Box
               component="img"
@@ -44,7 +53,7 @@ const CoffeeInfoCard = ({
               variant="h4"
               sx={{
                 textAlign: { xs: "center", sm: "left", lg: "center" },
-                color: "primary.dark",
+                color: textColor,
                 mb: 3,
               }}
             >
@@ -53,7 +62,7 @@ const CoffeeInfoCard = ({
             <Typography
               variant="body1"
               sx={{
-                color: "primary.dark",
+                color: textColor,
                 textAlign: { xs: "center", sm: "left", lg: "center" },
               }}
             >
@@ -66,4 +75,4 @@ const CoffeeInfoCard = ({
   );
 };
 
-export { CoffeeInfoCard };
+export { ResponsiveInfoCard };

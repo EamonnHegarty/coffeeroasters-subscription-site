@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import { CoffeeInfoCard } from "../components/CoffeeInfoCard";
+import { ResponsiveInfoCard } from "../components/ResponsiveInfoCard";
 import Danche from "../assets/home/desktop/image-danche.png";
 import GranEspresso from "../assets/home/desktop/image-gran-espresso.png";
 import Piccollo from "../assets/home/desktop/image-piccollo.png";
@@ -56,11 +56,13 @@ const Home = () => {
           </Typography>
         </Grid>
         {COFFEE_INFO.map((coffee) => (
-          <Grid item xs={12} md={12} lg={3}>
-            <CoffeeInfoCard
+          <Grid key={coffee.id} item xs={12} md={12} lg={3}>
+            <ResponsiveInfoCard
               img={coffee.img}
               title={coffee.title}
               description={coffee.description}
+              backgroundColor="transparent"
+              textColor="primary.dark"
             />
           </Grid>
         ))}
