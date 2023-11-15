@@ -4,7 +4,12 @@ const WhyChooseUs = () => {
   return (
     <Grid
       container
-      sx={{ backgroundColor: "#2C343E", borderRadius: "10px" }}
+      sx={{
+        backgroundColor: "#2C343E",
+        borderRadius: "10px",
+        position: "relative",
+        zIndex: 5,
+      }}
       minHeight={475}
     >
       <Grid

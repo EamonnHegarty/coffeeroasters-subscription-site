@@ -98,7 +98,22 @@ const Home = () => {
       <WhyChooseUs />
       <Grid container>
         {BENEFITS_INFO.map((benefit) => (
-          <Grid key={benefit.id} item xs={12} md={12} lg={4} px={4}>
+          <Grid
+            key={benefit.id}
+            item
+            xs={12}
+            md={12}
+            lg={4}
+            px={4}
+            sx={{
+              position: "relative",
+              zIndex: 10,
+              transform: "translateY(-50%)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <ResponsiveInfoCard
               img={benefit.img}
               title={benefit.title}
