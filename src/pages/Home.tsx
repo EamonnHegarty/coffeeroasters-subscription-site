@@ -1,10 +1,11 @@
+import React from "react";
 import Hero from "../components/Hero";
 import { ResponsiveInfoCard } from "../components/ResponsiveInfoCard";
 import Danche from "../assets/home/desktop/image-danche.png";
 import GranEspresso from "../assets/home/desktop/image-gran-espresso.png";
 import Piccollo from "../assets/home/desktop/image-piccollo.png";
 import Planalto from "../assets/home/desktop/image-planalto.png";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, useTheme } from "@mui/material";
 import { WhyChooseUs } from "../components/WhyChooseUs";
 import Bean from "../assets/home/desktop/icon-coffee-bean.svg";
 import Gift from "../assets/home/desktop/icon-gift.svg";
@@ -66,6 +67,8 @@ const BENEFITS_INFO = [
 ];
 
 const Home = () => {
+  const theme = useTheme();
+
   return (
     <>
       <Hero />
@@ -77,6 +80,12 @@ const Home = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              [theme.breakpoints.down("md")]: {
+                fontSize: "80px", // Adjust font size for medium and smaller screens
+              },
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "45px", // Adjust font size for medium and smaller screens
+              },
             }}
           >
             our collection

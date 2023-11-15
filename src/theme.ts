@@ -39,7 +39,7 @@ const theme = createTheme({
     // TITLE ALTERNATE BIG
     h5: {
       fontFamily: ["Fraunces", "serif"].join(","),
-      fontSize: 150,
+      fontSize: 140,
     },
     body1: {
       fontFamily: ["Barlow", "sans-serif"].join(","),
