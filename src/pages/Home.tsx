@@ -81,10 +81,10 @@ const Home = () => {
               alignItems: "center",
               justifyContent: "center",
               [theme.breakpoints.down("md")]: {
-                fontSize: "80px", // Adjust font size for medium and smaller screens
+                fontSize: "80px",
               },
               [theme.breakpoints.down("sm")]: {
-                fontSize: "45px", // Adjust font size for medium and smaller screens
+                fontSize: "45px",
               },
             }}
           >
