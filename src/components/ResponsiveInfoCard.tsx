@@ -28,7 +28,6 @@ const ResponsiveInfoCard = ({
       <CardContent>
         <Grid
           container
-          spacing={2}
           sx={{
             backgroundColor: backgroundColor,
             borderRadius: "10px",
