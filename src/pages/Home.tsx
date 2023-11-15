@@ -6,6 +6,9 @@ import Piccollo from "../assets/home/desktop/image-piccollo.png";
 import Planalto from "../assets/home/desktop/image-planalto.png";
 import { Grid, Typography } from "@mui/material";
 import { WhyChooseUs } from "../components/WhyChooseUs";
+import Bean from "../assets/home/desktop/icon-coffee-bean.svg";
+import Gift from "../assets/home/desktop/icon-gift.svg";
+import Truck from "../assets/home/desktop/icon-truck.svg";
 
 const COFFEE_INFO = [
   {
@@ -38,6 +41,30 @@ const COFFEE_INFO = [
   },
 ];
 
+const BENEFITS_INFO = [
+  {
+    id: 1,
+    img: Bean,
+    title: "Best quality",
+    description:
+      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+  },
+  {
+    id: 2,
+    img: Gift,
+    title: "Exclusive benefits",
+    description:
+      "Special offers and swag when you subscribe, including 30% off your first shipment.",
+  },
+  {
+    id: 3,
+    img: Truck,
+    title: "Free shipping",
+    description:
+      "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.",
+  },
+];
+
 const Home = () => {
   return (
     <>
@@ -63,11 +90,26 @@ const Home = () => {
               description={coffee.description}
               backgroundColor="transparent"
               textColor="primary.dark"
+              isIcon={false}
             />
           </Grid>
         ))}
       </Grid>
       <WhyChooseUs />
+      <Grid container>
+        {BENEFITS_INFO.map((benefit) => (
+          <Grid key={benefit.id} item xs={12} md={12} lg={4} px={4}>
+            <ResponsiveInfoCard
+              img={benefit.img}
+              title={benefit.title}
+              description={benefit.description}
+              backgroundColor="primary.main"
+              textColor="white"
+              isIcon
+            />
+          </Grid>
+        ))}
+      </Grid>
     </>
   );
 };

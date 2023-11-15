@@ -6,12 +6,14 @@ const ResponsiveInfoCard = ({
   description,
   backgroundColor,
   textColor,
+  isIcon,
 }: {
   img: string;
   title: string;
   description: string;
   backgroundColor: string;
   textColor: string;
+  isIcon: boolean;
 }) => {
   return (
     <Card
@@ -27,14 +29,30 @@ const ResponsiveInfoCard = ({
         <Grid
           container
           spacing={2}
-          sx={{ backgroundColor: backgroundColor, borderRadius: "10px" }}
+          sx={{
+            backgroundColor: backgroundColor,
+            borderRadius: "10px",
+            minHeight: isIcon ? 350 : 250,
+          }}
           p={2}
         >
-          <Grid item xs={12} sm={4} md={4} lg={12}>
+          <Grid
+            item
+            xs={12}
+            sm={4}
+            md={4}
+            lg={12}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
             <Box
               component="img"
               src={img}
-              sx={{ width: "100%", height: "auto" }}
+              sx={{
+                width: isIcon ? 150 : "100%",
+                height: isIcon ? 125 : "auto",
+              }}
             />
           </Grid>
           <Grid
