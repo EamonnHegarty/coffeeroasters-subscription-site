@@ -1,6 +1,6 @@
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 
-const ResponsiveInfoCard = ({
+const CoffeeAndBenefitsCard = ({
   img,
   title,
   description,
@@ -92,4 +92,4 @@ const ResponsiveInfoCard = ({
   );
 };
 
-export { ResponsiveInfoCard };
+export { CoffeeAndBenefitsCard };

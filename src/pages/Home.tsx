@@ -1,6 +1,5 @@
-import React from "react";
 import Hero from "../components/Hero";
-import { ResponsiveInfoCard } from "../components/ResponsiveInfoCard";
+import { CoffeeAndBenefitsCard } from "../components/CoffeeAndBenefitsCard";
 import Danche from "../assets/home/desktop/image-danche.png";
 import GranEspresso from "../assets/home/desktop/image-gran-espresso.png";
 import Piccollo from "../assets/home/desktop/image-piccollo.png";
@@ -93,7 +92,7 @@ const Home = () => {
         </Grid>
         {COFFEE_INFO.map((coffee) => (
           <Grid key={coffee.id} item xs={12} md={12} lg={3}>
-            <ResponsiveInfoCard
+            <CoffeeAndBenefitsCard
               img={coffee.img}
               title={coffee.title}
               description={coffee.description}
@@ -123,7 +122,7 @@ const Home = () => {
               justifyContent: "center",
             }}
           >
-            <ResponsiveInfoCard
+            <CoffeeAndBenefitsCard
               img={benefit.img}
               title={benefit.title}
               description={benefit.description}
