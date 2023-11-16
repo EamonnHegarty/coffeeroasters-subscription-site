@@ -1,27 +1,49 @@
-# React + TypeScript + Vite
+# Frontend Mentor - QR code component solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Coffeeroasters subscription site](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6/hub).
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Overview
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+### The challenge 
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Users should be able to:
+
+- Make selections to create a coffee subscription and see an order summary modal of their choices
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+
+### Links
+
+- [Live URL](https://coffeeroasters-subscription-site.onrender.com)
+
+## My process
+
+### Built with
+
+- HTML
+- CSS
+- [React](https://reactjs.org/) - JS library
+- [Mui](https://mui.com/)- Fully loaded component library
+  
+
+### Useful resources
+
+- [MUI Core Components](https://mui.com/material-ui/getting-started/) - MUI's docs are amazing and comprehenisive which was very useful for getting the responsiveness and feel to the page. 
+
+
+## Author
+
+- Frontend Mentor - [@EamonnHegarty](https://www.frontendmentor.io/profile/EamonnHegarty)
