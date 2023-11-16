@@ -60,6 +60,7 @@ const Home = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              mb: -5,
             }}
           >
             <CoffeeAndBenefitsCard
@@ -73,7 +74,7 @@ const Home = () => {
           </Grid>
         ))}
       </Grid>
-      <Typography variant="h3" color="secondary.light">
+      <Typography variant="h3" color="secondary.light" sx={{ p: 3 }}>
         How it works
       </Typography>
       <Grid container>
