@@ -60,7 +60,7 @@ const Home = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              mb: -5,
+              mb: -15,
             }}
           >
             <CoffeeAndBenefitsCard
@@ -81,6 +81,7 @@ const Home = () => {
         {STEPS.map((step) => (
           <Grid item xs={12} sm={4} key={step.id}>
             <StepsCard
+              id={step.id}
               number={step.number}
               title={step.title}
               description={step.description}

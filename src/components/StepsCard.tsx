@@ -1,14 +1,28 @@
-import { Grid, Card, CardContent, Typography } from "@mui/material";
+import {
+  Grid,
+  Card,
+  CardContent,
+  Typography,
+  Box,
+  Button,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 
 const StepsCard = ({
+  id,
   number,
   title,
   description,
 }: {
+  id: number;
   number: string;
   title: string;
   description: string;
 }) => {
+  const theme = useTheme();
+  const isXsScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Card
       sx={{
@@ -62,6 +76,30 @@ const StepsCard = ({
             >
               {description}
             </Typography>
+            {((id === 1 && !isXsScreen) || (id === 3 && isXsScreen)) && (
+              <Grid item xs={12} mt={10}>
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  justifyContent={{ xs: "center", sm: "flex-start" }}
+                >
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    sx={{
+                      color: "secondary.main",
+                      backgroundColor: "primary.main",
+                      "&:hover": {
+                        backgroundColor: "info.main",
+                        color: "secondary.main",
+                      },
+                    }}
+                  >
+                    <Typography variant="body1">Create your plan</Typography>
+                  </Button>
+                </Box>
+              </Grid>
+            )}
           </Grid>
         </Grid>
       </CardContent>
