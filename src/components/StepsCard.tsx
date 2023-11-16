@@ -47,7 +47,7 @@ const StepsCard = ({
               color="primary.dark"
               sx={{
                 textAlign: { xs: "center", sm: "left" },
-                maxWidth: 200,
+                maxWidth: { xs: "auto", lg: 200 },
                 mb: 3,
               }}
             >
