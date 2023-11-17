@@ -57,9 +57,6 @@ const Home = () => {
               position: "relative",
               zIndex: 10,
               transform: "translateY(-50%)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
             }}
           >
             <CoffeeAndBenefitsCard
