@@ -1,10 +1,10 @@
-import Bean from "../../assets/home/desktop/icon-coffee-bean.svg";
-import Gift from "../../assets/home/desktop/icon-gift.svg";
-import Truck from "../../assets/home/desktop/icon-truck.svg";
-import Danche from "../../assets/home/desktop/image-danche.png";
-import GranEspresso from "../../assets/home/desktop/image-gran-espresso.png";
-import Piccollo from "../../assets/home/desktop/image-piccollo.png";
-import Planalto from "../../assets/home/desktop/image-planalto.png";
+import Bean from "../assets/home/desktop/icon-coffee-bean.svg";
+import Gift from "../assets/home/desktop/icon-gift.svg";
+import Truck from "../assets/home/desktop/icon-truck.svg";
+import Danche from "../assets/home/desktop/image-danche.png";
+import GranEspresso from "../assets/home/desktop/image-gran-espresso.png";
+import Piccollo from "../assets/home/desktop/image-piccollo.png";
+import Planalto from "../assets/home/desktop/image-planalto.png";
 
 export const COFFEE_INFO = [
   {

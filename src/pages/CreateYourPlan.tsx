@@ -1,5 +1,17 @@
+import Hero from "../components/Hero";
+import { planHeroConfig } from "../utils/heroConfig";
+
 const CreateYourPlan = () => {
-  return <div>CreateYourPlan</div>;
+  return (
+    <Hero
+      page={planHeroConfig.page}
+      title={planHeroConfig.title}
+      description={planHeroConfig.description}
+      desktopBackground={planHeroConfig.desktopBackground}
+      tabletBackground={planHeroConfig.tabletBackground}
+      mobileBackground={planHeroConfig.mobileBackground}
+    />
+  );
 };
 
 export default CreateYourPlan;

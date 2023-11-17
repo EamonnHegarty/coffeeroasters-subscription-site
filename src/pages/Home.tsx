@@ -2,15 +2,23 @@ import Hero from "../components/Hero";
 import { CoffeeAndBenefitsCard } from "../components/CoffeeAndBenefitsCard";
 import { Grid, Typography, useTheme } from "@mui/material";
 import { WhyChooseUs } from "../components/WhyChooseUs";
-import { BENEFITS_INFO, COFFEE_INFO, STEPS } from "./utils/cardsInfo";
+import { BENEFITS_INFO, COFFEE_INFO, STEPS } from "../utils/cardsInfo";
 import StepsCard from "../components/StepsCard";
+import { homeHeroConfig } from "../utils/heroConfig";
 
 const Home = () => {
   const theme = useTheme();
 
   return (
     <>
-      <Hero />
+      <Hero
+        page={homeHeroConfig.page}
+        title={homeHeroConfig.title}
+        description={homeHeroConfig.description}
+        desktopBackground={homeHeroConfig.desktopBackground}
+        tabletBackground={homeHeroConfig.tabletBackground}
+        mobileBackground={homeHeroConfig.mobileBackground}
+      />
       <Grid container mb={15}>
         <Grid item xs={12}>
           <Typography
