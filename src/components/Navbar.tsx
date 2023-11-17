@@ -8,12 +8,7 @@ import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import Logo from "../assets/shared/desktop/logo.svg";
-
-const PAGES = [
-  { key: 1, text: "HOME", route: "/" },
-  { key: 2, text: "ABOUT US", route: "about-us" },
-  { key: 3, text: "CREATE YOUR PLAN", route: "create-your-plan" },
-];
+import { PAGES } from "../config/pages";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(

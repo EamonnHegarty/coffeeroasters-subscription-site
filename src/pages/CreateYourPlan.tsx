@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import { planHeroConfig } from "../utils/heroConfig";
+import { planHeroConfig } from "../config/heroConfig";
 
 const CreateYourPlan = () => {
   return (

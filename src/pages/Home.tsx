@@ -2,9 +2,9 @@ import Hero from "../components/Hero";
 import { CoffeeAndBenefitsCard } from "../components/CoffeeAndBenefitsCard";
 import { Grid, Typography, useTheme } from "@mui/material";
 import { WhyChooseUs } from "../components/WhyChooseUs";
-import { BENEFITS_INFO, COFFEE_INFO, STEPS } from "../utils/cardsInfo";
+import { BENEFITS_INFO, COFFEE_INFO, STEPS } from "../config/cardsInfo";
 import StepsCard from "../components/StepsCard";
-import { homeHeroConfig } from "../utils/heroConfig";
+import { homeHeroConfig } from "../config/heroConfig";
 
 const Home = () => {
   const theme = useTheme();

@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import { aboutHeroConfig } from "../utils/heroConfig";
+import { aboutHeroConfig } from "../config/heroConfig";
 
 const AboutUs = () => {
   return (

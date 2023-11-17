@@ -4,12 +4,7 @@ import Logo from "../assets/shared/desktop/logo-white.svg";
 import Facebook from "../assets/shared/desktop/icon-facebook.svg";
 import Twitter from "../assets/shared/desktop/icon-twitter.svg";
 import Instagram from "../assets/shared/desktop/icon-instagram.svg";
-
-const PAGES = [
-  { key: 1, text: "HOME", route: "/" },
-  { key: 2, text: "ABOUT US", route: "about-us" },
-  { key: 3, text: "CREATE YOUR PLAN", route: "create-your-plan" },
-];
+import { PAGES } from "../config/pages";
 
 const ICONS = [Facebook, Twitter, Instagram];
 
@@ -45,7 +40,6 @@ const Footer = () => {
             <Box component="img" src={Logo} alt="coffeeroasters logo" />
           </Link>
         </Grid>
-
         <Grid item container xs={12} lg={4} justifyContent="center">
           {PAGES.map((page) => (
             <Grid item key={page.key} px={1}>
