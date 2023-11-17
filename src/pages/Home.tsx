@@ -1,7 +1,6 @@
 import Hero from "../components/Hero";
 import { CoffeeAndBenefitsCard } from "../components/CoffeeAndBenefitsCard";
 import { Grid, Typography, useTheme } from "@mui/material";
-import { WhyChooseUs } from "../components/WhyChooseUs";
 import { BENEFITS_INFO, COFFEE_INFO, STEPS } from "../config/cardsInfo";
 import StepsCard from "../components/StepsCard";
 import { homeHeroConfig } from "../config/heroConfig";
@@ -51,7 +50,37 @@ const Home = () => {
           </Grid>
         ))}
       </Grid>
-      <WhyChooseUs />
+      <Grid
+        container
+        sx={{
+          backgroundColor: "#2C343E",
+          borderRadius: "10px",
+          position: "relative",
+          zIndex: 5,
+        }}
+        minHeight={475}
+      >
+        <Grid
+          item
+          xs={12}
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          textAlign="center"
+          pt={10}
+          px={5}
+        >
+          <Typography variant="h3" color="white" mb={3}>
+            Why choose us?
+          </Typography>
+          <Typography variant="body1" color="white" sx={{ maxWidth: 525 }}>
+            A large part of our role is choosing which particular coffees will
+            be featured in our range. This means working closely with the best
+            coffee growers to give you a more impactful experience on every
+            level.
+          </Typography>
+        </Grid>
+      </Grid>
       <Grid container>
         {BENEFITS_INFO.map((benefit) => (
           <Grid
