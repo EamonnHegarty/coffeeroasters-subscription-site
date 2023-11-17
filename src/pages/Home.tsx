@@ -60,7 +60,6 @@ const Home = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              mb: -15,
             }}
           >
             <CoffeeAndBenefitsCard
