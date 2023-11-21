@@ -4,8 +4,9 @@ import { Grid, Typography, useTheme } from "@mui/material";
 import { BENEFITS_INFO, COFFEE_INFO, STEPS } from "../config/cardsInfo";
 import StepsCard from "../components/StepsCard";
 import { homeHeroConfig } from "../config/heroConfig";
+import withScrollToTop from "./withScrollToTop";
 
-const Home = () => {
+const Home = withScrollToTop(() => {
   const theme = useTheme();
 
   return (
@@ -124,6 +125,6 @@ const Home = () => {
       </Grid>
     </>
   );
-};
+});
 
 export default Home;

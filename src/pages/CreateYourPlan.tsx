@@ -1,7 +1,8 @@
 import Hero from "../components/Hero";
 import { planHeroConfig } from "../config/heroConfig";
+import withScrollToTop from "./withScrollToTop";
 
-const CreateYourPlan = () => {
+const CreateYourPlan = withScrollToTop(() => {
   return (
     <Hero
       page={planHeroConfig.page}
@@ -12,6 +13,6 @@ const CreateYourPlan = () => {
       mobileBackground={planHeroConfig.mobileBackground}
     />
   );
-};
+});
 
 export default CreateYourPlan;

@@ -2,8 +2,9 @@ import { Box, Grid, Typography } from "@mui/material";
 import Hero from "../components/Hero";
 import { aboutHeroConfig } from "../config/heroConfig";
 import Commitment from "../assets/about/desktop/image-commitment.jpg";
+import withScrollToTop from "./withScrollToTop";
 
-const AboutUs = () => {
+const AboutUs = withScrollToTop(() => {
   return (
     <>
       <Hero
@@ -108,6 +109,6 @@ const AboutUs = () => {
       </Box>
     </>
   );
-};
+});
 
 export default AboutUs;
