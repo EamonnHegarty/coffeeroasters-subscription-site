@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import { aboutHeroConfig } from "../config/heroConfig";
 import Commitment from "../assets/about/desktop/image-commitment.jpg";
 import withScrollToTop from "./withScrollToTop";
+import Quality from "../assets/about/desktop/image-quality.jpg";
 
 const AboutUs = withScrollToTop(() => {
   return (
@@ -103,6 +104,81 @@ const AboutUs = withScrollToTop(() => {
               coffee plant science. Curating only the finest blends, we roast
               each lot to highlight tasting profiles distinctive to their native
               growing region.
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+      <Box
+        sx={{
+          backgroundColor: "#2C343E",
+          borderRadius: "10px",
+          position: "relative",
+          mt: 20,
+        }}
+      >
+        <Grid container p={5}>
+          <Grid
+            item
+            md={6}
+            xs={12}
+            sx={{
+              order: { xs: 1, md: 2 },
+              position: "relative",
+              zIndex: 10,
+              transform: "translateY(-35%)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              maxWidth: {
+                lg: 550,
+              },
+            }}
+          >
+            <Box
+              component="img"
+              src={Quality}
+              sx={{
+                maxHeight: 400,
+                width: "100%",
+                borderRadius: "10px",
+                ml: {
+                  md: 10,
+                },
+              }}
+            />
+          </Grid>
+          <Grid
+            item
+            md={6}
+            xs={12}
+            sx={{
+              order: { xs: 2, md: 1 },
+              color: "white",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              mt: {
+                xs: -10,
+                md: 0,
+              },
+            }}
+          >
+            <Typography variant="h3" mb={5} textAlign="center">
+              Uncompromising quality
+            </Typography>
+            <Typography
+              variant="body1"
+              color="white"
+              textAlign="center"
+              sx={{ maxWidth: 500 }}
+            >
+              Although we work with growers who pay close attention to all
+              stages of harvest and processing, we employ, on our end, a
+              rigorous quality control program to avoid over-roasting or baking
+              the coffee dry. Every bag of coffee is tagged with a roast date
+              and batch number. Our goal is to roast consistent, user-friendly
+              coffee, so that brewing is easy and enjoyable.
             </Typography>
           </Grid>
         </Grid>
