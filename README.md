@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [MUI Core Components](https://mui.com/material-ui/getting-started/) - MUI's docs are amazing and comprehenisive which was very useful for getting the responsiveness and feel to the page. 
+- [MUI Core Components](https://mui.com/material-ui/getting-started/) - MUI's docs.
 
 
 ## Author
