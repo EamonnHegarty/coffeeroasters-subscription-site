@@ -4,6 +4,8 @@ import { aboutHeroConfig } from "../config/heroConfig";
 import Commitment from "../assets/about/desktop/image-commitment.jpg";
 import withScrollToTop from "./withScrollToTop";
 import Quality from "../assets/about/desktop/image-quality.jpg";
+import { COUNTRIES } from "../config/cardsInfo";
+import AddressCard from "../components/AddressCard";
 
 const AboutUs = withScrollToTop(() => {
   return (
@@ -183,6 +185,20 @@ const AboutUs = withScrollToTop(() => {
           </Grid>
         </Grid>
       </Box>
+      <Typography variant="h3" color="secondary.light" sx={{ p: 3, mt: 7 }}>
+        Our headquarters
+      </Typography>
+      <Grid container sx={{}}>
+        {COUNTRIES.map((country) => (
+          <Grid item xs={12} sm={4} key={country.id}>
+            <AddressCard
+              img={country.img}
+              country={country.country}
+              address={country.address}
+            />
+          </Grid>
+        ))}
+      </Grid>
     </>
   );
 });

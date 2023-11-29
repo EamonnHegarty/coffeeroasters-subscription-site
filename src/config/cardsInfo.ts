@@ -5,6 +5,7 @@ import Danche from "../assets/home/desktop/image-danche.png";
 import GranEspresso from "../assets/home/desktop/image-gran-espresso.png";
 import Piccollo from "../assets/home/desktop/image-piccollo.png";
 import Planalto from "../assets/home/desktop/image-planalto.png";
+import UK from "../assets/about/desktop/illustration-uk.svg";
 
 export const COFFEE_INFO = [
   {
@@ -82,5 +83,41 @@ export const STEPS = [
     title: "Receive and enjoy!",
     description:
       "We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.",
+  },
+];
+
+export const COUNTRIES = [
+  {
+    id: 1,
+    img: UK,
+    country: "United Kingdom",
+    address: [
+      { id: 1, text: "68 Asfordby Rd" },
+      { id: 2, text: "Alcaston" },
+      { id: 3, text: "SY6 1YA" },
+      { id: 4, text: "+44 1241 918425" },
+    ],
+  },
+  {
+    id: 2,
+    img: UK,
+    country: "United Kingdom",
+    address: [
+      { id: 1, text: "68 Asfordby Rd" },
+      { id: 2, text: "Alcaston" },
+      { id: 3, text: "SY6 1YA" },
+      { id: 4, text: "+44 1241 918425" },
+    ],
+  },
+  {
+    id: 3,
+    img: UK,
+    country: "United Kingdom",
+    address: [
+      { id: 1, text: "68 Asfordby Rd" },
+      { id: 2, text: "Alcaston" },
+      { id: 3, text: "SY6 1YA" },
+      { id: 4, text: "+44 1241 918425" },
+    ],
   },
 ];
