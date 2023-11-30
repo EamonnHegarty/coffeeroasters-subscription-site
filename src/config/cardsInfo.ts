@@ -6,6 +6,8 @@ import GranEspresso from "../assets/home/desktop/image-gran-espresso.png";
 import Piccollo from "../assets/home/desktop/image-piccollo.png";
 import Planalto from "../assets/home/desktop/image-planalto.png";
 import UK from "../assets/about/desktop/illustration-uk.svg";
+import Australia from "../assets/about/desktop/illustration-australia.svg";
+import Canada from "../assets/about/desktop/illustration-canada.svg";
 
 export const COFFEE_INFO = [
   {
@@ -100,24 +102,24 @@ export const COUNTRIES = [
   },
   {
     id: 2,
-    img: UK,
-    country: "United Kingdom",
+    img: Canada,
+    country: "Canada",
     address: [
-      { id: 1, text: "68 Asfordby Rd" },
-      { id: 2, text: "Alcaston" },
-      { id: 3, text: "SY6 1YA" },
-      { id: 4, text: "+44 1241 918425" },
+      { id: 1, text: "1528  Eglinton Avenue" },
+      { id: 2, text: "Toronto" },
+      { id: 3, text: "Ontario M4P 1A6" },
+      { id: 4, text: "+1 416 485 2997" },
     ],
   },
   {
     id: 3,
-    img: UK,
-    country: "United Kingdom",
+    img: Australia,
+    country: "Australia",
     address: [
-      { id: 1, text: "68 Asfordby Rd" },
-      { id: 2, text: "Alcaston" },
-      { id: 3, text: "SY6 1YA" },
-      { id: 4, text: "+44 1241 918425" },
+      { id: 1, text: "36 Swanston Street" },
+      { id: 2, text: "Kewell" },
+      { id: 3, text: "Victoria" },
+      { id: 4, text: "+61 4 9928 3629" },
     ],
   },
 ];
