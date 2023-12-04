@@ -17,6 +17,7 @@ const AboutUs = withScrollToTop(() => {
         desktopBackground={aboutHeroConfig.desktopBackground}
         tabletBackground={aboutHeroConfig.tabletBackground}
         mobileBackground={aboutHeroConfig.mobileBackground}
+        isBorder
       />
       <Box>
         <Grid container alignItems="center" justifyContent="center" p={5}>

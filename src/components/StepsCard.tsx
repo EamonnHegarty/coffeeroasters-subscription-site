@@ -14,11 +14,17 @@ const StepsCard = ({
   number,
   title,
   description,
+  isHomePage,
+  backgroundColor,
+  textColor,
 }: {
   id: number;
   number: string;
   title: string;
   description: string;
+  isHomePage: boolean;
+  backgroundColor: string;
+  textColor: string;
 }) => {
   const theme = useTheme();
   const isXsScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -27,7 +33,7 @@ const StepsCard = ({
     <Card
       sx={{
         boxShadow: "none",
-        backgroundColor: "transparent",
+        backgroundColor: backgroundColor,
         border: "none",
         mt: 5,
         display: "flex",
@@ -58,7 +64,7 @@ const StepsCard = ({
           <Grid item xs={12}>
             <Typography
               variant="h3"
-              color="primary.dark"
+              color={textColor}
               sx={{
                 textAlign: { xs: "center", sm: "left" },
                 maxWidth: { xs: "auto", lg: 200 },
@@ -69,37 +75,38 @@ const StepsCard = ({
             </Typography>
             <Typography
               variant="body1"
-              color="primary.dark"
+              color={textColor}
               sx={{
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
               {description}
             </Typography>
-            {((id === 1 && !isXsScreen) || (id === 3 && isXsScreen)) && (
-              <Grid item xs={12} mt={10}>
-                <Box
-                  display="flex"
-                  alignItems="center"
-                  justifyContent={{ xs: "center", sm: "flex-start" }}
-                >
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    sx={{
-                      color: "secondary.main",
-                      backgroundColor: "primary.main",
-                      "&:hover": {
-                        backgroundColor: "info.main",
-                        color: "secondary.main",
-                      },
-                    }}
+            {((id === 1 && !isXsScreen) || (id === 3 && isXsScreen)) &&
+              isHomePage && (
+                <Grid item xs={12} mt={10}>
+                  <Box
+                    display="flex"
+                    alignItems="center"
+                    justifyContent={{ xs: "center", sm: "flex-start" }}
                   >
-                    <Typography variant="body1">Create your plan</Typography>
-                  </Button>
-                </Box>
-              </Grid>
-            )}
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      sx={{
+                        color: "secondary.main",
+                        backgroundColor: "primary.main",
+                        "&:hover": {
+                          backgroundColor: "info.main",
+                          color: "secondary.main",
+                        },
+                      }}
+                    >
+                      <Typography variant="body1">Create your plan</Typography>
+                    </Button>
+                  </Box>
+                </Grid>
+              )}
           </Grid>
         </Grid>
       </CardContent>

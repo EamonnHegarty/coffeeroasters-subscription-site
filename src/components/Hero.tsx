@@ -15,6 +15,7 @@ type HeroProps = {
   desktopBackground: string;
   tabletBackground: string;
   mobileBackground: string;
+  isBorder?: boolean;
 };
 
 const Hero = (props: HeroProps) => {
@@ -25,6 +26,7 @@ const Hero = (props: HeroProps) => {
     desktopBackground,
     tabletBackground,
     mobileBackground,
+    isBorder,
   } = props;
 
   const theme = useTheme();
@@ -51,7 +53,7 @@ const Hero = (props: HeroProps) => {
           xl: 15,
         },
         mb: 10,
-        borderRadius: "10px",
+        borderRadius: isBorder ? "10px" : "0px",
       }}
     >
       <Grid container>

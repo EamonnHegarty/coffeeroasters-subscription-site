@@ -18,6 +18,7 @@ const Home = withScrollToTop(() => {
         desktopBackground={homeHeroConfig.desktopBackground}
         tabletBackground={homeHeroConfig.tabletBackground}
         mobileBackground={homeHeroConfig.mobileBackground}
+        isBorder
       />
       <Grid container mb={15}>
         <Grid item xs={12}>
@@ -119,6 +120,9 @@ const Home = withScrollToTop(() => {
               number={step.number}
               title={step.title}
               description={step.description}
+              isHomePage
+              backgroundColor="transparent"
+              textColor="primary.dark"
             />
           </Grid>
         ))}
