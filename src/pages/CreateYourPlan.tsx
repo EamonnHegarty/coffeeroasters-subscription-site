@@ -19,7 +19,7 @@ const CreateYourPlan = withScrollToTop(() => {
         mobileBackground={planHeroConfig.mobileBackground}
       />
       <Box mt={15}>
-        <Grid container sx={{ backgroundColor: "#2C343E", minHeight: 500 }}>
+        <Grid container sx={{ backgroundColor: "#2C343E", minHeight: 450 }}>
           {STEPS.map((step) => (
             <Grid item xs={12} sm={4} key={step.id}>
               <StepsCard
@@ -35,9 +35,8 @@ const CreateYourPlan = withScrollToTop(() => {
           ))}
         </Grid>
       </Box>
-      <Box mt={10} mx={5}>
+      <Box my={10} mx={5}>
         <Grid container>
-          {/* Navigation options - Only visible for medium and up screens */}
           <Grid
             item
             xs={12}
