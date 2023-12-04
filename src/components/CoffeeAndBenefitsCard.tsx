@@ -1,20 +1,16 @@
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 
-const CoffeeAndBenefitsCard = ({
-  img,
-  title,
-  description,
-  backgroundColor,
-  textColor,
-  isIcon,
-}: {
+type CoffeeAndBenefitsCardProps = {
   img: string;
   title: string;
   description: string;
   backgroundColor: string;
   textColor: string;
   isIcon: boolean;
-}) => {
+};
+
+const CoffeeAndBenefitsCard = (props: CoffeeAndBenefitsCardProps) => {
+  const { img, title, description, backgroundColor, textColor, isIcon } = props;
   return (
     <Card
       sx={{

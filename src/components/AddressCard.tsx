@@ -5,15 +5,14 @@ type Address = {
   text: string;
 };
 
-const AddressCard = ({
-  img,
-  country,
-  address,
-}: {
+type AddressCardProps = {
   img: string;
   country: string;
   address: Address[];
-}) => {
+};
+
+const AddressCard = (props: AddressCardProps) => {
+  const { img, country, address } = props;
   return (
     <Card
       sx={{

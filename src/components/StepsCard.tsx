@@ -9,15 +9,7 @@ import {
   useTheme,
 } from "@mui/material";
 
-const StepsCard = ({
-  id,
-  number,
-  title,
-  description,
-  isHomePage,
-  backgroundColor,
-  textColor,
-}: {
+type StepsCardProps = {
   id: number;
   number: string;
   title: string;
@@ -25,7 +17,18 @@ const StepsCard = ({
   isHomePage: boolean;
   backgroundColor: string;
   textColor: string;
-}) => {
+};
+
+const StepsCard = (props: StepsCardProps) => {
+  const {
+    id,
+    number,
+    title,
+    description,
+    isHomePage,
+    backgroundColor,
+    textColor,
+  } = props;
   const theme = useTheme();
   const isXsScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
