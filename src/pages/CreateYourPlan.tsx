@@ -4,6 +4,8 @@ import { STEPS } from "../config/cardsInfo";
 import { planHeroConfig } from "../config/heroConfig";
 import withScrollToTop from "./withScrollToTop";
 import StepsCard from "../components/StepsCard";
+import CreateYourPlanStep from "../components/CreateYourPlanStep";
+import { PLAN_STEPS } from "../config/CreateYourPlanInfo";
 
 const CreateYourPlan = withScrollToTop(() => {
   return (
@@ -28,6 +30,22 @@ const CreateYourPlan = withScrollToTop(() => {
                 isHomePage={false}
                 backgroundColor="#2C343E"
                 textColor="#FEFCF7"
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+      <Box mt={10} mx={5}>
+        <Grid container>
+          <Grid item xs={3}>
+            Navigaion options
+          </Grid>
+          {PLAN_STEPS.map((step) => (
+            <Grid item xs={9} key={step.id}>
+              <CreateYourPlanStep
+                question={step.question}
+                cardInfo={step.cardInfo}
+                number={step.number}
               />
             </Grid>
           ))}

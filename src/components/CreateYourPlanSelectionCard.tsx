@@ -1,17 +1,40 @@
 import { Grid, Card, CardContent, Typography } from "@mui/material";
+import { Dispatch, SetStateAction } from "react";
 
-const CreateYourPlanStepCard = () => {
+type CreateYourPlanSelectionCardProps = {
+  title: string;
+  description: string;
+  id: number;
+  selectedId: number;
+  setSelectedId: Dispatch<SetStateAction<number>>;
+};
+
+const CreateYourPlanSelectionCard = (
+  props: CreateYourPlanSelectionCardProps
+) => {
+  const { title, description, id, setSelectedId, selectedId } = props;
+
+  const handleOnClick = () => {
+    setSelectedId(id);
+  };
+
   return (
     <Card
       sx={{
         boxShadow: "none",
-        backgroundColor: "white",
+        backgroundColor: selectedId === id ? "primary.main" : "#F4F1EB",
         border: "none",
         mt: 5,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        minHeight: 275,
+        cursor: "pointer",
+        "&:hover": {
+          backgroundColor: selectedId === id ? "primary.main" : "primary.light",
+        },
       }}
+      onClick={handleOnClick}
     >
       <CardContent sx={{ maxWidth: 350 }}>
         <Grid
@@ -24,23 +47,23 @@ const CreateYourPlanStepCard = () => {
           <Grid item xs={12}>
             <Typography
               variant="h3"
-              color="black"
+              color={selectedId === id ? "#ffffff" : "primary.dark"}
               sx={{
                 textAlign: { xs: "center", sm: "left" },
                 maxWidth: { xs: "auto", lg: 200 },
                 mb: 3,
               }}
             >
-              title
+              {title}
             </Typography>
             <Typography
               variant="body1"
-              color="black"
+              color={selectedId === id ? "#ffffff" : "primary.dark"}
               sx={{
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
-              description
+              {description}
             </Typography>
           </Grid>
         </Grid>
@@ -49,4 +72,4 @@ const CreateYourPlanStepCard = () => {
   );
 };
 
-export default CreateYourPlanStepCard;
+export default CreateYourPlanSelectionCard;
