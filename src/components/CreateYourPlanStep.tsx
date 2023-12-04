@@ -54,7 +54,7 @@ const CreateYourPlanStep = (props: CreateYourPlanStepProps) => {
       {showSelections && (
         <Grid container spacing={2}>
           {cardInfo?.map((info) => (
-            <Grid item xs={4} key={info.id}>
+            <Grid item xs={12} md={4} key={info.id}>
               <CreateYourPlanSelectionCard
                 title={info.title}
                 description={info.description}

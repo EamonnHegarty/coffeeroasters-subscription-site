@@ -37,11 +37,18 @@ const CreateYourPlan = withScrollToTop(() => {
       </Box>
       <Box mt={10} mx={5}>
         <Grid container>
-          <Grid item xs={3}>
+          {/* Navigation options - Only visible for medium and up screens */}
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{ display: { xs: "none", md: "block" } }}
+          >
             Navigaion options
           </Grid>
+
           {PLAN_STEPS.map((step) => (
-            <Grid item xs={9} key={step.id}>
+            <Grid item xs={12} md={9} key={step.id}>
               <CreateYourPlanStep
                 question={step.question}
                 cardInfo={step.cardInfo}

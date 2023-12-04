@@ -49,7 +49,7 @@ const CreateYourPlanSelectionCard = (
               variant="h3"
               color={selectedId === id ? "#ffffff" : "primary.dark"}
               sx={{
-                textAlign: { xs: "center", sm: "left" },
+                textAlign: { xs: "left" },
                 maxWidth: { xs: "auto", lg: 200 },
                 mb: 3,
               }}
@@ -60,7 +60,7 @@ const CreateYourPlanSelectionCard = (
               variant="body1"
               color={selectedId === id ? "#ffffff" : "primary.dark"}
               sx={{
-                textAlign: { xs: "center", sm: "left" },
+                textAlign: { xs: "left" },
               }}
             >
               {description}
