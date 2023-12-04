@@ -36,15 +36,29 @@ const CreateYourPlanStep = (props: CreateYourPlanStepProps) => {
           justifyContent="right"
           alignItems="center"
         >
-          {showSelections ? (
+          {!showSelections ? (
             <KeyboardArrowDownIcon
-              sx={{ color: "primary.main" }}
+              sx={{
+                color: "primary.main",
+                cursor: "pointer",
+                "&:hover": {
+                  backgroundColor: "#F4F1EB",
+                  borderRadius: "20px",
+                },
+              }}
               fontSize="large"
               onClick={() => setShowSelections(!showSelections)}
             />
           ) : (
             <KeyboardArrowUpIcon
-              sx={{ color: "primary.main" }}
+              sx={{
+                color: "primary.main",
+                cursor: "pointer",
+                "&:hover": {
+                  backgroundColor: "#F4F1EB",
+                  borderRadius: "20px",
+                },
+              }}
               fontSize="large"
               onClick={() => setShowSelections(!showSelections)}
             />
