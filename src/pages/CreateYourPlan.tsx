@@ -37,15 +37,7 @@ const CreateYourPlan = withScrollToTop(() => {
       </Box>
       <Box my={10} mx={5}>
         <Grid container>
-          <Grid
-            item
-            xs={12}
-            md={3}
-            sx={{ display: { xs: "none", md: "block" } }}
-          >
-            Navigaion options
-          </Grid>
-          <Grid item xs={12} md={9}>
+          <Grid item xs={12}>
             {PLAN_STEPS.map((step) => (
               <Grid item xs={12} key={step.id} mb={10}>
                 <CreateYourPlanStep
